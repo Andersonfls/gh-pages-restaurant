@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+
+  <!-- scroll reveal-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <!-- fluid box-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/css/fluidbox.min.css">
+
+  <!-- custum css -->
+  <link rel="stylesheet" href="css/main.css">
+  <title>Isabella Restaurant</title>
+</head>
+
+<body>
+  <!-- header section-->
+  <header id="">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo/logo.jpeg" width="30" height="30" class="d-inline-block
+            align-top" alt="logo" loading="lazy">
+        ArtGastronomic
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="offcanvas" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse offcanvas-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.youtube.com/channel/UCybV8OZ7XZ9U30ESJ_r2UCg"
+              target="_blank">YouTube</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="receitas.html">Receitas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contactos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- into section -->
+  <div class="social-media">
+   
+        
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <!-- main section post -->
+    <section id="receitas" class="section">
+      <hr class="hr">
+      <!--<div class="nav-scroller bg-white shadow-sm">
+        <nav class="nav nav-underline">
+          <a class="nav-link active" href="#">Dashboard</a>
+          <a class="nav-link" href="#">
+            Friends
+            <span class="badge badge-pill bg-light align-text-bottom">27</span>
+          </a>
+          <a class="nav-link" href="#">Explore</a>
+          <a class="nav-link" href="#">Suggestions</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+        </nav>
+      </div>-->
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-9">
+          <div class="card-group receitaContainer">
+
+          </div>
+          <hr />
+          <nav aria-label="" class="border pt-3 mb-2 bg-white text-dark">
+            <ul class="pagination justify-content-center ">
+              <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Proxima</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-3 mb-2">
+          <div id="categorias" class="card">
+            <div id="categoria-header" class="card-header">
+              <header>
+                <h5>Categorias
+                  <button class="btn btn-outline-primary btn-sm float-right" data-toggle="collapse"
+                    data-target="#collapseCategoria" aria-expanded="true" aria-controls="collapseCategoria">
+                    <i class="fa fa-window-maximize" aria-hidden="false"></i>
+                  </button>
+                </h5>
+              </header>
+            </div>
+            <div class="collapse show categoria" id="collapseCategoria" aria-labelledby="categoria-header"
+              data-parent="#Menu-section">
+              <div class="card-body p-2">
+                <nav class="menufilter clearfix list-group
+                      list-group-flush">
+                  <a href="#" data-filter="*" class="list-group-item
+                        list-group-item-action p-1 active" aria-selected="true">All</a>
+                  <a href="#" data-filter="#hamburger class="list-group-item
+                        list-group-item-action p-1" aria-selected="false">Hamburguer</a>
+                  <a href="#" data-filter="#burguer" class="list-group-item
+                        list-group-item-action p-1" aria-selected="false">Burgues</a>
+                  <a href="#" data-filter="#starters" class="list-group-item list-group-item-action p-1"
+                    aria-selected="false">Starters</a>
+                  <a href="#" data-filter="#chocolate" class="list-group-item list-group-item-action p-1"
+                    aria-selected="false">Chocolates</a>
+                  <a href="#" data-filter="#meat" class="list-group-item list-group-item-action p-1"
+                    aria-selected="false">Meat</a>
+                  <a href="#" data-filter="#sanduches" class="list-group-item list-group-item-action p-1"
+                    aria-selected="false">Sanduches</a>
+                  <a href="#" data-filter="#sanduches" class="list-group-item
+                        list-group-item-action p-1" aria-selected="false">Vegan</a>
+                  <a href="#" data-filter="#soups" class="list-group-item
+                        list-group-item-action p-1" aria-selected="false">Soups</a>
+                  <a href="#" data-filter="#sweet" class="list-group-item
+                        list-group-item-action p-1" aria-selected="false">Sweet</a>
+                  <a href="#" data-filter="#pizzas" class="list-group-item list-group-item-action p-1"
+                    aria-selected="false">Pizzas</a>
+                  <a href="#" data-filter="#bread" class="list-group-item
+                        list-group-item-action p-1" aria-selected="false">Bread</a>
+                  <a href="#" data-filter="#cakes" class="list-group-item
+                        list-group-item-action p-1" aria-selected="false">Cakes</button>
+                    <a href="#" data-filter="#internacional" class="list-group-item list-group-item-action p-1"
+                      aria-selected="false">Internacional</a>
+                    <a href="#" data-filter="#sauces" class="list-group-item
+                        list-group-item-action p-1" aria-selected="false">Sauces</a>
+                    <a href="#" data-filter="#SoupsandDrinks" class="list-group-item list-group-item-action p-1"
+                      aria-selected="false">Soups and Drinks</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div><!-- categoria receita end -->
+      </div>
+    </section>
+
+    <!-- album section -->
+    <section class="section">
+      <hr class="hr">
+      <div class="card mb-3">
+        <h3 class="card-header">Album</h3>
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="5" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/img-fundo-01.jpg" class="d-block w-100 outher-img" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/img-fundo-02.jpg" class="d-block w-100 outher-img" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/img-fundo-05.jpg" class="d-block w-100 outher-img" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="card-footer text-muted">
+          2 days ago
+        </div>
+      </div>
+      
+        
+  
+    </section>
+  </div>
+  <!-- section contacto -->
+  <section class="section">
+    <hr class="hr">
+    <div id="contact" class="container">
+      <aside class="address p-2">
+        <h2 class="">Find Us</h2>
+        <div class="row justify-content-sm-center">
+          <p class="col-sm-12 col-md-4 col-lg-3"><strong>Address</strong><br><i class="fas fa-map-marker-alt"></i> 23
+            Main Street<br><i class="fas fa-map-marker-alt"></i>Waterford, Ireland 1001</p>
+          <p class="col-sm-12 col-md-2 col-lg-3"><strong>Contact</strong><br><i class="fas fa-mobile-alt"></i>
+            083 1010010 <i class="fas
+              fa-phone-square-alt"></i> 083 1010010<br><i class="fas
+              fa-envelope-square"></i> ritatere@gmail.com</p>
+          <p class="col-sm-12 col-md-6 col-lg-6"><strong>Hours</strong><br><i class="far fa-clock"></i> Monday–Friday:
+            9:00AM–5:00PM<br><i class="far fa-clock"></i> Saturday &amp; Sunday: 11:00AM–3:00PM</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer-section mt-4">
+    <a class="btn btn-lg" href="https://instagram.com" target="_blank" role="button"><i
+        class="fa fa-instagram"></i></a>
+    <a class="btn btn-lg" href="https://facebook.com/" target="_blank" role="button"><i
+        class="fa fa-facebook"></i></a>
+    <a class="btn btn-lg" href="https://www.youtube.com/" target="_blank"
+      role="button"><i class="fa fa-youtube"></i></a>
+    <p class="copyright mt-2 pb-0">
+      Copyright &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      All rights reserved <i class="ion-heart" aria-hidden="true"></i> by Isabella Restaurant!
+    </p>
+  </footer>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+  <script type="text/javascript"
+    src="//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.5/js/jquery.fluidbox.min.js"></script>
+  
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
+  <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+         
+
+  <!-- contentful -->
+  <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+  <script type="module" src="js/index.js"></script>
+
+  <!-- js custum -->
+  <script src="js/app.js"></script>
+  <script src="js/navigation.js"></script>
+  <!--<script src="js/scripts.js"></script>-->
+
+</body>
+
+</html>

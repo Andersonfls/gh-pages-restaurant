@@ -1,0 +1,24 @@
+
+
+DROP DATABASE IF EXISTS restaurantDatabase;
+CREATE DATABASE IF NOT EXISTS restaurantDatabase;
+USE restaurantDatabase;
+
+DROP TABLE IF EXISTS restaurant;
+CREATE TABLE restaurant (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	Categoria VARCHAR(50),
+   	description VARCHAR(50),
+    price double(8, 2),
+    picture VARCHAR(50)
+);
+
+INSERT INTO restaurant VALUES (NULL, 'Salads', 'Crisp Whitebait with a Polenta Crust, Grilled Peppers & Lime Basil Mayo Salad ', 'Honey Goats Cheese, Kumquat, Papaya & Kohlrabi Salad', 20.00, 'receita-5.jpg');
+INSERT INTO restaurant VALUES (NULL, 'Pasta', 'Double Pepperoni, Red Onion & Jalapenos, 'lack Cherry & Chocolate Eton Mess with Fresh Summer Cherries & Coconut Shavings', 13.00, 'receita-3.jpg');
+INSERT INTO restaurant VALUES (NULL, 'Brunch', 'Grilled Chicken Salad, Mustard Frills, Oak Lettuce, Streaky Bacon, Chorizo Mayo, Lettuce, Tomato,', 'lack Cherry & Chocolate Eton Mess with Fresh Summer Cherries & Coconut Shavings', 12.80, 'receita-9.jpg');
+INSERT INTO restaurant VALUES (NULL, 'Desserts', 'lack Cherry & Chocolate Eton Mess with Fresh Summer Cherries & Coconut Shavings', 'Fresh Sweet Corn Fritter, Beetroot Puree & Brassica Salad', 20.00, 'receita-4.jpg');
+INSERT INTO restaurant VALUES (NULL, 'Cakes', 'Beef Burger, Mature Cheddar, Streaky Bacon, Smoked Garlic Mayo, Lettuce, Tomato & Fries', 'Fresh Sweet Corn Fritter, Beetroot Puree & Brassica Salad', 16.00, 'receita-8.jpg');
+INSERT INTO restaurant VALUES (NULL, 'Burges', 'Beef Burger, Mature Cheddar, Streaky Bacon, Smoked Garlic Mayo, Lettuce, Tomato & Fries', 'Beef Burger, Mature Cheddar, Streaky Bacon, Smoked Garlic Mayo, Lettuce, Tomato & Fries', 14.00, 'receita-6.jpg');
+
+
+select* from restaurant;
